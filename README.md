@@ -11,10 +11,10 @@
 
 - [Best Grass](https://www.acmicpc.net/problem/6186)
 - [Spawn of Ungoliant](https://www.acmicpc.net/problem/11370)
+- [Ga](https://www.acmicpc.net/problem/11448)
 
 ## 풀어볼 문제
 
 - [연구소](https://www.acmicpc.net/problem/14502)
 - [아기상어](https://www.acmicpc.net/problem/16236)
 - [Bucket Brigade](https://www.acmicpc.net/problem/17198)
-- [GA](https://www.acmicpc.net/problem/11448)
