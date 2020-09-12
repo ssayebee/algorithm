@@ -25,34 +25,30 @@ public class P17198 {
 
         map = new char[N][N];
         dist = new int[N][N];
-        int result = -1;
+        Point point = null;
 
         for (int i = 0; i < N; i++) {
-            map[i] = br.readLine().toCharArray();
-        }
-
-        for (int i = 0; i < N; i++) {
+            String line = br.readLine();
             for (int j = 0; j < N; j++) {
+                map[i][j] = line.charAt(j);
                 if (map[i][j] == 'B') {
-                    result = bfs(i, j);
+                    point = new Point(i, j);
                 }
             }
         }
 
-        bw.write(String.valueOf(result - 1));
+        bw.write(String.valueOf(bfs(point) - 1));
 
         bw.flush();
         bw.close();
     }
 
-    private static int bfs(int i, int j) {
+    private static int bfs(Point point) {
         Queue<Point> q = new LinkedList<>();
-        q.offer(new Point(i, j));
-        boolean isFind = false;
-        int result = -1;
+        q.offer(point);
 
-        dist[i][j] = 1;
-        while (!q.isEmpty() && !isFind) {
+        dist[point.x][point.y] = 1;
+        while (!q.isEmpty()) {
             Point cur = q.poll();
             int ci = cur.x;
             int cj = cur.y;
@@ -64,14 +60,12 @@ public class P17198 {
                 if (ni < 0 || ni >= N || nj < 0 || nj >= N || map[ni][nj] == 'R' || dist[ni][nj] != 0)
                     continue;
                 if (map[ni][nj] == 'L') {
-                    isFind = true;
-                    result = dist[ci][cj];
-                    break;
+                    return dist[ci][cj];
                 }
                 dist[ni][nj] = dist[ci][cj] + 1;
                 q.offer(new Point(ni, nj));
             }
         }
-        return result;
+        return -1;
     }
 }
