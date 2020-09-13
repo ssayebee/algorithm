@@ -14,9 +14,13 @@
 - [Ga](https://www.acmicpc.net/problem/11448)
 - [Bucket Brigade](https://www.acmicpc.net/problem/17198)
 - [미로 탐색](https://www.acmicpc.net/problem/2178)
+- [섬의 개수](https://www.acmicpc.net/problem/4963)
+- [나이트의 이동](https://www.acmicpc.net/problem/7562)
 
 ## 풀어볼 문제
 
 - [연구소](https://www.acmicpc.net/problem/14502)
 - [아기상어](https://www.acmicpc.net/problem/16236)
 - [영역 구하기](https://www.acmicpc.net/problem/2583)
+- [Emacs](https://www.acmicpc.net/problem/18422)
+- [양치기 꿍](https://www.acmicpc.net/problem/3187)
