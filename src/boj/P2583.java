@@ -21,7 +21,6 @@ public class P2583 {
     private static int N;
     private static int K;
     private static ArrayList<Integer> list;
-    private static int cnt;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -36,7 +35,6 @@ public class P2583 {
 
         map = new boolean[M][N];
         list = new ArrayList<>();
-        cnt = 0;
 
         for (int i = 0; i < K; i++) {
             st = new StringTokenizer(br.readLine());
@@ -55,13 +53,12 @@ public class P2583 {
             for (int j = 0; j < N; j++) {
                 if (!map[i][j]) {
                     bfs(i, j);
-                    cnt++;
                 }
             }
         }
 
         list.sort(Comparator.naturalOrder());
-        sb.append(cnt).append("\n");
+        sb.append(list.size()).append("\n");
         sb.append(list.stream().map(String::valueOf).collect(Collectors.joining(" ")));
         bw.write(sb.toString());
 
