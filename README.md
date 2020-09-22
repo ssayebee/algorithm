@@ -20,6 +20,9 @@
 - [양치기 꿍](https://www.acmicpc.net/problem/3187)
 - [영역 구하기](https://www.acmicpc.net/problem/2583)
 
+## 동적 프로그래밍
+- [1로 만들기](https://www.acmicpc.net/problem/1463)
+
 ## 풀어볼 문제
 
 - [연구소](https://www.acmicpc.net/problem/14502)
